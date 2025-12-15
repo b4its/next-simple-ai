@@ -1,6 +1,6 @@
 'use-client'
 import { Button } from "@/components/ui/button"
-
+import Link from "next/link";
 export default function Home() {
   return (
       <div style={{        
@@ -11,7 +11,9 @@ export default function Home() {
         minHeight: '100vh',
         textAlign: 'center',
       }}>
-        <Button>Selamat Datang</Button>
+                <Button asChild>
+                  <Link href="/login">Login</Link>
+                </Button>
       </div>
 );
 }
